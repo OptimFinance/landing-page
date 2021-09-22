@@ -4,11 +4,13 @@ interface HeaderProps {
 	title?: string;
 }
 
-const HTMLHead = ({ title = 'Optum' }: HeaderProps) => {
+const HTMLHead = ({ title = 'Optim' }: HeaderProps) => {
 	return <>
 		<Head>
 			<title>{title}</title>
 			<link rel="icon" href="/favicon.ico" />
+			<link href="http://fonts.cdnfonts.com/css/graphik" rel="stylesheet"></link>
+			<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@200;300;400;500&display=swap" rel="stylesheet"></link>
 		</Head>
 	</>
 }

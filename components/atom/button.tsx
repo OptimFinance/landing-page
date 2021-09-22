@@ -1,14 +1,10 @@
-interface IButtonProps {
-	text: string;
-	disabled?: boolean;
+interface IButtonProps extends React.HTMLProps<HTMLButtonElement> {
 	className?: string;
 }
 
-const Button = ({ text, disabled, className = '' }: IButtonProps) => {
-	const normalClasses = 'text-white bg-green-400 hover:bg-green-300 active:bg-green-600'
-	const disabledClasses = 'text-gray-600 bg-gray-400 cursor-not-allowed'
-	return <button className={`py-2 px-3 ${disabled ? disabledClasses : normalClasses} ${className}`}>
-		{text}
+const Button = ({ className, children }: IButtonProps) => {
+	return <button className={className}>
+		{children}
 	</button>
 }
 
