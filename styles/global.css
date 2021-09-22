@@ -36,3 +36,16 @@ p {
   padding: 0;
   margin: 0;
 }
+
+#optim-email-input:focus {
+  border-image-slice: 1;
+  border-image-source: linear-gradient(105deg, #2a72eb 33%, #e1bdf1 87%);
+}
+
+#optim-nav-checkbox:checked ~ .optim-nav-overlay {
+  display: block;
+}
+
+#optim-nav-checkbox:checked ~ .optim-nav {
+  transform: translateX(0%);
+}

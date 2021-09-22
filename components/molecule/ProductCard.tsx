@@ -14,7 +14,7 @@ const ProductCard = ({ img, title, content }: IProductCard) => {
 				<h4 className='font-medium text-xl text-[#d8d8d8] mb-3'>
 					{title}
 				</h4>
-				<p className='font-light text-sm leading-[1.57] tracking-[0.2px]'>{content}</p>
+				<p className='font-light text-sm leading-[1.57] tracking-[0.4px]'>{content}</p>
 			</div>
 		</div>
 	);

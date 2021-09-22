@@ -1,9 +1,10 @@
+import React from 'react';
 import Logo from '../atom/Logo';
 import Tag from '../atom/Tag';
 
-const Team = () => {
+const Team = React.forwardRef<HTMLElement>((_, ref) => {
 	return (
-		<section className='px-5 mb-14'>
+		<section ref={ref} className='px-5 mb-14'>
 			<div className='text-sm font-medium tracking-[6px] uppercase mb-2 gradient-text bg-gradient-to-r from-[#80acfd] to-[#e0bdf1]'>
 				The team
 			</div>
@@ -28,6 +29,6 @@ const Team = () => {
 			</div>
 		</section>
 	);
-};
+});
 
 export default Team;

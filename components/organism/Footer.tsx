@@ -1,3 +1,4 @@
+import React from 'react';
 import {
 	DiscordFilled,
 	GithubFilled,
@@ -6,9 +7,9 @@ import {
 	TwitterFilled,
 } from '../atom/Icon';
 
-const Footer = () => {
+const Footer = React.forwardRef<HTMLElement>((_, ref) => {
 	return (
-		<footer>
+		<footer ref={ref}>
 			<div className='px-5 mb-5'>
 				<div className='flex border-t border-opacity-30 border-white pt-7'>
 					<div className='flex-1 space-x-6'>
@@ -46,6 +47,6 @@ const Footer = () => {
 			<div className='bg-footer-dots bg-center h-16'></div>
 		</footer>
 	);
-};
+});
 
 export default Footer;

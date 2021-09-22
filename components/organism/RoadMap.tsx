@@ -1,4 +1,31 @@
+import React from 'react';
 import TimeLine from '../molecule/TimeLine';
+
+const RoadMap = React.forwardRef<HTMLElement>((_, ref) => {
+	return (
+		<section ref={ref} className='mb-14'>
+			<div className='px-5'>
+				<div className='text-sm font-medium tracking-[6px] uppercase mb-2 gradient-text bg-gradient-to-r from-[#80acfd] to-[#e0bdf1]'>
+					Roadmap
+				</div>
+				<div className='text-[#d8d8d8] text-[40px] mb-8'>
+					Explore our roadmap
+				</div>
+				{roadMapData.map((roadMap, index) => (
+					<TimeLine
+						key={index}
+						month={roadMap.month}
+						year={roadMap.year}
+						content={roadMap.content}
+					/>
+				))}
+			</div>
+			<img src='/assets/grid.png' className='w-full' alt='optim grid' />
+		</section>
+	);
+});
+
+export default RoadMap;
 
 const roadMapData = [
 	{
@@ -65,29 +92,3 @@ const roadMapData = [
 		),
 	},
 ];
-
-const RoadMap = () => {
-	return (
-		<section className='mb-14'>
-			<div className='px-5'>
-				<div className='text-sm font-medium tracking-[6px] uppercase mb-2 gradient-text bg-gradient-to-r from-[#80acfd] to-[#e0bdf1]'>
-					Roadmap
-				</div>
-				<div className='text-[#d8d8d8] text-[40px] mb-8'>
-					Explore our roadmap
-				</div>
-				{roadMapData.map((roadMap, index) => (
-					<TimeLine
-						key={index}
-						month={roadMap.month}
-						year={roadMap.year}
-						content={roadMap.content}
-					/>
-				))}
-			</div>
-			<img src='/assets/grid.png' className='w-full' alt='optim grid' />
-		</section>
-	);
-};
-
-export default RoadMap;

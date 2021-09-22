@@ -9,7 +9,7 @@ const Tag = ({ text, subText, className = '' }: ITagProps) => {
 		flex justify-between w-[200px]
 	` : ''} ${className}`}>
 		<span className='gradient-text text-sm'>{text}</span>
-		{subText && <span className='ml-16 text-xs font-mono text-white font-light'>{subText}</span>}
+		{subText && <span className='text-base leading-6 font-mono text-white font-light'>{subText}</span>}
 	</div>
 }
 
