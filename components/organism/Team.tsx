@@ -8,7 +8,7 @@ const Team = React.forwardRef<HTMLElement>((_, ref) => {
 			<div className='text-sm font-medium tracking-[6px] uppercase mb-2 gradient-text bg-gradient-to-r from-[#80acfd] to-[#e0bdf1]'>
 				The team
 			</div>
-			<div className='text-[#d8d8d8] text-[40px] mb-8'>Made by innovators</div>
+			<h2 className='text-[#d8d8d8] text-[40px] mb-8'>Made by innovators</h2>
 			<Tag text='Comming soon' className='mb-5' />
 			<div className='mb-4 gradient-text text-2xl from-[#e3bef1] to-[#2a72eb]'>
 				A top-tier team with experience building on Cardano + DeFi on other

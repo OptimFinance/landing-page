@@ -1,0 +1,42 @@
+<svg width="60" height="60" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient x1="65.835%" y1="50%" x2="-10.311%" y2="54.235%" id="a">
+            <stop stop-color="#E1BDF1" offset="0%"/>
+            <stop stop-color="#2A72EB" offset="100%"/>
+        </linearGradient>
+        <linearGradient x1="64.771%" y1="15.971%" x2="36.489%" y2="90.142%" id="b">
+            <stop stop-color="#9CA1EE" offset="0%"/>
+            <stop stop-color="#3C7AEC" offset="100%"/>
+        </linearGradient>
+        <linearGradient x1="35.788%" y1="15.43%" x2="79.544%" y2="129.011%" id="c">
+            <stop stop-color="#2A72EB" offset="0%"/>
+            <stop stop-color="#E1BDF1" offset="100%"/>
+        </linearGradient>
+        <linearGradient x1="113.872%" y1="50%" x2="-27.778%" y2="53.778%" id="d">
+            <stop stop-color="#2A72EB" offset="0%"/>
+            <stop stop-color="#E1BDF1" offset="100%"/>
+        </linearGradient>
+        <linearGradient x1="90.838%" y1="50%" x2="35.18%" y2="205.127%" id="e">
+            <stop stop-color="#2A72EB" offset="0%"/>
+            <stop stop-color="#E1BDF1" offset="100%"/>
+        </linearGradient>
+        <linearGradient x1="75.759%" y1="95.646%" x2="27.207%" y2="7.212%" id="f">
+            <stop stop-color="#2A72EB" offset="0%"/>
+            <stop stop-color="#E1BDF1" offset="100%"/>
+        </linearGradient>
+        <linearGradient x1="117.296%" y1="12.91%" x2="-29.618%" y2="90.27%" id="g">
+            <stop offset="0%"/>
+            <stop stop-opacity="0" offset="50.617%"/>
+            <stop offset="100%"/>
+        </linearGradient>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <path stroke="url(#a)" stroke-width=".741" stroke-linecap="round" stroke-linejoin="round" d="m14.445 9.894 11.436 6.08 20.544-2.317-11.273-6.99z"/>
+        <path stroke="url(#b)" stroke-width=".741" stroke-linecap="round" stroke-linejoin="round" d="M14.444 9.898 4.304 29.801l11.948 6.34 9.633-20.138z"/>
+        <path stroke="url(#c)" stroke-width=".741" stroke-linecap="round" stroke-linejoin="round" d="m4.305 29.806 11.947 6.33 9.633 17.197-11.441-6.285z"/>
+        <path stroke="url(#d)" stroke-width=".741" stroke-linecap="round" stroke-linejoin="round" d="m14.445 47.048 20.707-2.505 11.273 6.46-20.544 2.33z"/>
+        <path stroke="url(#e)" stroke-width=".741" stroke-linecap="round" stroke-linejoin="round" d="m46.367 51.006 9.938-20.358-12.024-6.142-9.166 20.033z"/>
+        <path stroke="url(#f)" stroke-width=".741" stroke-linecap="round" stroke-linejoin="round" d="m56.305 30.711-9.938-17.016-11.252-7.028L44.28 24.56z"/>
+        <path fill="url(#g)" d="M12.632 7.601 35.664 4l12.538 7.832 11.074 18.91-11.009 22.665L25.38 56l-12.748-7.004L1.333 29.784z"/>
+    </g>
+</svg>

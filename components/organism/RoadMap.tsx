@@ -8,9 +8,9 @@ const RoadMap = React.forwardRef<HTMLElement>((_, ref) => {
 				<div className='text-sm font-medium tracking-[6px] uppercase mb-2 gradient-text bg-gradient-to-r from-[#80acfd] to-[#e0bdf1]'>
 					Roadmap
 				</div>
-				<div className='text-[#d8d8d8] text-[40px] mb-8'>
+				<h2 className='text-[#d8d8d8] text-[40px] mb-8'>
 					Explore our roadmap
-				</div>
+				</h2>
 				{roadMapData.map((roadMap, index) => (
 					<TimeLine
 						key={index}
@@ -20,7 +20,7 @@ const RoadMap = React.forwardRef<HTMLElement>((_, ref) => {
 					/>
 				))}
 			</div>
-			<img src='/assets/grid.png' className='w-full' alt='optim grid' />
+			<img src='/assets/grid.svg' width="100%" alt='optim grid' />
 		</section>
 	);
 });

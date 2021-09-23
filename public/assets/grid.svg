@@ -1,0 +1,17 @@
+<svg width="414" height="98" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <linearGradient x1="36.139%" y1="0%" x2="36.139%" y2="80.143%" id="b">
+            <stop offset="0%"/>
+            <stop stop-color="#C9B9F4" offset="23.384%"/>
+            <stop stop-color="#3275EB" offset="69.327%"/>
+            <stop offset="100%"/>
+        </linearGradient>
+        <path id="a" d="M0 0h414v98H0z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <mask id="c" fill="#fff">
+            <use xlink:href="#a"/>
+        </mask>
+        <path d="M414.144 1.009h-414m414-.865h-414m414 2.594h-414m414 1.73h-414m414 1.73h-414m414 2.017h-414m414 2.594h-414m414 2.594h-414m414 3.17h-414m414 4.036h-414m414 4.612h-414m414 5.764h-414m414 6.63h-414m414 7.782h-414m414 9.8h-414m414 12.97h-414m414 17.295h-414m414 31.417h-606.338M138.366 0-162.58 116.88M162.169 0-29.59 116.773M184.769 0 65.406 116.88M200.961 0 161.4 116.773M213.04 0l39.529 116.88M229.232 0l119.384 116.773M251.831 0l191.76 116.773M275.14 0l299.716 115.726M298.324 0l617.001 116.773M354.111-.047l561.214 65.611" stroke="url(#b)" stroke-width=".5" stroke-linecap="round" stroke-linejoin="round" mask="url(#c)"/>
+    </g>
+</svg>

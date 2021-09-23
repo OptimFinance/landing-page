@@ -1,0 +1,32 @@
+<svg width="60" height="60" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="a">
+            <stop stop-color="#2A72EB" offset="0%"/>
+            <stop stop-color="#E1BDF1" offset="100%"/>
+        </linearGradient>
+        <linearGradient x1="100%" y1="17.224%" x2="0%" y2="82.525%" id="b">
+            <stop stop-color="#E1BDF1" stop-opacity=".204" offset="0%"/>
+            <stop stop-color="#2A72EB" stop-opacity="0" offset="100%"/>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="c">
+            <stop stop-color="#0C9EFA" offset="0%"/>
+            <stop stop-color="#91E6F3" offset="100%"/>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="d">
+            <stop stop-color="#0C9EFA" offset="0%"/>
+            <stop stop-color="#91E6F3" offset="100%"/>
+        </linearGradient>
+        <linearGradient x1="117.296%" y1="3.948%" x2="-29.618%" y2="100%" id="e">
+            <stop offset="0%"/>
+            <stop stop-opacity="0" offset="50.617%"/>
+            <stop offset="100%"/>
+        </linearGradient>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <path stroke="url(#a)" stroke-width=".667" stroke-linecap="round" stroke-linejoin="round" d="m30 6.667 20.207 11.666v23.334L30 53.333 9.793 41.667V18.333z"/>
+        <path fill="url(#b)" d="m30 6.667 20.207 11.666v23.334L30 53.333 9.793 41.667V18.333z"/>
+        <path stroke="url(#c)" stroke-width=".667" stroke-linecap="round" stroke-linejoin="round" d="M50.207 41.667 9.793 18.333M9.793 41.667l40.414-23.334"/>
+        <path stroke="url(#d)" stroke-width=".667" stroke-linecap="round" stroke-linejoin="round" d="M9.793 41.433 30 6.667l20.207 34.766z"/>
+        <path fill="url(#e)" d="m30 4 22.517 13v26L30 56 7.483 43V17z"/>
+    </g>
+</svg>
