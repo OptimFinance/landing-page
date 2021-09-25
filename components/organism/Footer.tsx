@@ -31,6 +31,8 @@ const Footer = React.forwardRef<HTMLElement>((_, ref) => {
 					</div>
 					<div className='w-6'>
 						<img
+							width="24"
+							height="48"
 							className='w-full'
 							src='/assets/optim-logo-footer.svg'
 							alt='optim logo footer'

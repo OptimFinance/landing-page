@@ -15,7 +15,7 @@ const Navigator = ({ dispatchAnchor }: INavigatorProps) => {
 	return (
 		<div className='relative'>
 			<div className='p-5'>
-				<img className='h-6 mx-auto' src='/assets/logo.svg' alt='optim' />
+				<img width="118" height="24" className='w-[118px] mx-auto' src='/assets/logo.svg' alt='optim' />
 				<label htmlFor='optim-nav-checkbox' className='absolute left-5 top-5'>
 					<svg width='24' height='24' xmlns='http://www.w3.org/2000/svg'>
 						<g
@@ -39,7 +39,7 @@ const Navigator = ({ dispatchAnchor }: INavigatorProps) => {
 			{/* Nagigation */}
 			<nav className='optim-nav -translate-x-full fixed top-0 left-0 bottom-0 w-[320px] max-w-full bg-optim-dark transition-transform'>
 				<div className='p-5 border-b border-white border-opacity-10 bg-black relative'>
-					<img className='h-6 mx-auto' src='/assets/logo.svg' alt='optim' />
+					<img width="118" height="24" className='w-[118px] mx-auto' src='/assets/logo.svg' alt='optim' />
 					<label
 						htmlFor='optim-nav-checkbox'
 						className='absolute left-5 top-5'

@@ -37,6 +37,10 @@ p {
   margin: 0;
 }
 
+img {
+  width: 100%;
+}
+
 #optim-email-input:focus {
   border-image-slice: 1;
   border-image-source: linear-gradient(105deg, #2a72eb 33%, #e1bdf1 87%);

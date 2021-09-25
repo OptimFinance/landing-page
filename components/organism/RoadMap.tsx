@@ -20,7 +20,7 @@ const RoadMap = React.forwardRef<HTMLElement>((_, ref) => {
 					/>
 				))}
 			</div>
-			<img src='/assets/grid.svg' width="100%" alt='optim grid' />
+			<img src='/assets/grid.svg' width="414" height="98" alt='optim grid' />
 		</section>
 	);
 });
