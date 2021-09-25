@@ -1,6 +1,6 @@
 const Header = () => {
 	return (
-		<header className='my-14 px-5'>
+		<header className='mb-14 mt-10 px-5'>
 			<h1 className='gradient-text text-[50px] leading-[60px] font-light mb-3'>Cardano’s Yield Aggregator</h1>
 			<div className='text-base font-light mb-5'>Optim Finance is a suite of  products designed to optimize yield generation in the Cardano DeFi ecosystem. Easy, automated, secure asset management.</div>
 			<div className='bg-optim-dark rounded-sm mb-2'>
