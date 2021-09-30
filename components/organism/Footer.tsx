@@ -6,6 +6,7 @@ import {
 	RedditFilled,
 	TwitterFilled,
 } from '../atom/Icon';
+import SOCIAL_LINKS from 'config/social';
 
 const Footer = React.forwardRef<HTMLElement>((_, ref) => {
 	return (
@@ -13,7 +14,11 @@ const Footer = React.forwardRef<HTMLElement>((_, ref) => {
 			<div className='px-5 mb-5'>
 				<div className='flex border-t border-opacity-30 border-white pt-7'>
 					<div className='flex-1 space-x-6'>
-						<a href='#'>
+						<a
+							href={SOCIAL_LINKS.twitter}
+							target='_blank'
+							rel='noopener noreferrer'
+						>
 							<TwitterFilled />
 						</a>
 						<a href='#'>
@@ -31,8 +36,8 @@ const Footer = React.forwardRef<HTMLElement>((_, ref) => {
 					</div>
 					<div className='w-6'>
 						<img
-							width="24"
-							height="48"
+							width='24'
+							height='48'
 							className='w-full'
 							src='/assets/optim-logo-footer.svg'
 							alt='optim logo footer'

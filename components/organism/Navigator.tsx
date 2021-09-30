@@ -1,3 +1,4 @@
+import SOCIAL_LINKS from 'config/social';
 import {
 	CloseOutlined,
 	DiscordFilled,
@@ -15,7 +16,13 @@ const Navigator = ({ dispatchAnchor }: INavigatorProps) => {
 	return (
 		<div className='relative'>
 			<div className='p-5'>
-				<img width="118" height="24" className='w-[118px] mx-auto' src='/assets/logo.svg' alt='optim' />
+				<img
+					width='118'
+					height='24'
+					className='w-[118px] mx-auto'
+					src='/assets/logo.svg'
+					alt='optim'
+				/>
 				<label htmlFor='optim-nav-checkbox' className='absolute left-5 top-5'>
 					<svg width='24' height='24' xmlns='http://www.w3.org/2000/svg'>
 						<g
@@ -39,11 +46,14 @@ const Navigator = ({ dispatchAnchor }: INavigatorProps) => {
 			{/* Nagigation */}
 			<nav className='optim-nav -translate-x-full fixed top-0 left-0 bottom-0 w-[320px] max-w-full bg-optim-dark transition-transform'>
 				<div className='p-5 border-b border-white border-opacity-10 bg-black relative'>
-					<img width="118" height="24" className='w-[118px] mx-auto' src='/assets/logo.svg' alt='optim' />
-					<label
-						htmlFor='optim-nav-checkbox'
-						className='absolute left-5 top-5'
-					>
+					<img
+						width='118'
+						height='24'
+						className='w-[118px] mx-auto'
+						src='/assets/logo.svg'
+						alt='optim'
+					/>
+					<label htmlFor='optim-nav-checkbox' className='absolute left-5 top-5'>
 						<CloseOutlined />
 					</label>
 				</div>
@@ -59,7 +69,12 @@ const Navigator = ({ dispatchAnchor }: INavigatorProps) => {
 										{navItem.text}
 									</label>
 								) : navItem.link ? (
-									<a href={navItem.link} className='flex items-center'>
+									<a
+										href={navItem.link}
+										className='flex items-center'
+										target='_blank'
+										rel='noopener noreferrer'
+									>
 										{navItem.icon && (
 											<span className='mr-2'>{navItem.icon}</span>
 										)}
@@ -68,9 +83,11 @@ const Navigator = ({ dispatchAnchor }: INavigatorProps) => {
 								) : (
 									<span>
 										<span>{navItem.text}</span>
-										{navItem.upComing && <span className='text-sm opacity-50 ml-2'>
-											Coming soon!
-										</span>}
+										{navItem.upComing && (
+											<span className='text-sm opacity-50 ml-2'>
+												Coming soon!
+											</span>
+										)}
 									</span>
 								)}
 							</li>
@@ -110,7 +127,7 @@ const navItems = [
 		text: 'Twitter',
 		anchor: '',
 		icon: <TwitterFilled />,
-		link: '#',
+		link: SOCIAL_LINKS.twitter,
 	},
 	{
 		text: 'Discord',
