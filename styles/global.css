@@ -10,6 +10,10 @@
 			from-[#e886b9] 
 			to-[#337fff];
   }
+  .container {
+    width: calc(100% - 160px);
+    @apply mx-auto max-w-[1200px];
+  }
 }
 
 * {
