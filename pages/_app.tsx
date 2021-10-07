@@ -4,7 +4,7 @@ import '../styles/global.css';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <div className='text-white font-sans w-full'>
+    <div className='text-white font-sans w-full overflow-hidden'>
       <Header />
       <Component {...pageProps} />
     </div>

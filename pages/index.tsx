@@ -38,7 +38,7 @@ export default function Home() {
   };
 
   return (
-    <div>
+    <div className='text-select'>
       <Navigator dispatchAnchor={dispatchAnchor} />
       <Header />
       <Products ref={productRef} />

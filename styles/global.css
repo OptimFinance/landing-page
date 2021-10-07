@@ -10,6 +10,9 @@
 			from-[#e886b9] 
 			to-[#337fff];
   }
+  .text-select {
+    @apply selection:bg-[#a8f2f1] selection:text-[#1756c0];
+  }
   .container {
     width: calc(100% - 160px);
     @apply mx-auto max-w-[1200px];

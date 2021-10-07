@@ -1,4 +1,6 @@
+import { Menu } from '@headlessui/react';
 import SOCIAL_LINKS from 'config/social';
+import Dropdown from '../atom/Dropdown';
 import {
   BookOutlined,
   CloseOutlined,
@@ -8,12 +10,34 @@ import {
   RedditFilled,
   TwitterFilled,
 } from '../atom/Icon';
+import { ChevronDownIcon } from '@heroicons/react/solid';
 
 interface INavigatorProps {
   dispatchAnchor: (anchor: string) => void;
 }
 
 const Navigator = ({ dispatchAnchor }: INavigatorProps) => {
+  const SocialsComponent = socials.map((social) => (
+    <li key={social.text} className='hover:gradient-text'>
+      {social.link ? (
+        <a
+          href={social.link}
+          className='flex items-center'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          <span className='mr-2'>{social.icon}</span>
+          <span>{social.text}</span>
+        </a>
+      ) : (
+        <>
+          <span className='mr-2'>{social.icon}</span>
+          <span>{social.text}</span>
+        </>
+      )}
+    </li>
+  ));
+
   return (
     <div className='relative'>
       <div className=''>
@@ -27,9 +51,52 @@ const Navigator = ({ dispatchAnchor }: INavigatorProps) => {
           />
           <div className='hidden md:block'>
             <ul className='text-sm flex space-x-3 lg:space-x-10'>
-              {navItems.slice(0, 5).map((item) => (
-                <li key={item.text}>{item.text}</li>
-              ))}
+              <li
+                className='hover:gradient-text cursor-pointer'
+                onClick={() => dispatchAnchor('product')}
+              >
+                Products
+              </li>
+              <li
+                className='hover:gradient-text cursor-pointer'
+                onClick={() => dispatchAnchor('roadmap')}
+              >
+                Roadmap
+              </li>
+              <li
+                className='hover:gradient-text cursor-pointer'
+                onClick={() => dispatchAnchor('team')}
+              >
+                Team
+              </li>
+              <li>
+                <Dropdown
+                  trigger={
+                    <Menu.Button className='inline-block hover:gradient-text font-normal'>
+                      Docs
+                    </Menu.Button>
+                  }
+                >
+                  <div className='gradient-text w-max'>Coming soon</div>
+                </Dropdown>
+              </li>
+              <li>
+                <Dropdown
+                  trigger={
+                    <Menu.Button className='inline-block'>
+                      <span className='hover:gradient-text font-normal'>
+                        Socials
+                      </span>
+                      <ChevronDownIcon
+                        className='ml-1 h-5 w-5'
+                        aria-hidden='true'
+                      />
+                    </Menu.Button>
+                  }
+                >
+                  <ul className='w-max space-y-2'>{SocialsComponent}</ul>
+                </Dropdown>
+              </li>
             </ul>
           </div>
           <div className='hidden md:block'>
@@ -80,39 +147,42 @@ const Navigator = ({ dispatchAnchor }: INavigatorProps) => {
         </div>
         <div className='p-5 '>
           <ul className='space-y-4'>
-            {navItems.map((navItem, index) => (
-              <li key={index}>
-                {navItem.anchor ? (
-                  <label
-                    htmlFor='optim-nav-checkbox'
-                    onClick={() => dispatchAnchor(navItem.anchor)}
-                  >
-                    {navItem.text}
-                  </label>
-                ) : navItem.link ? (
-                  <a
-                    href={navItem.link}
-                    className='flex items-center'
-                    target='_blank'
-                    rel='noopener noreferrer'
-                  >
-                    {navItem.icon && (
-                      <span className='mr-2'>{navItem.icon}</span>
-                    )}
-                    <span>{navItem.text}</span>
-                  </a>
-                ) : (
-                  <span>
-                    <span>{navItem.text}</span>
-                    {navItem.upComing && (
-                      <span className='text-sm opacity-50 ml-2'>
-                        Coming soon!
-                      </span>
-                    )}
-                  </span>
-                )}
-              </li>
-            ))}
+            <li>
+              <label
+                htmlFor='optim-nav-checkbox'
+                onClick={() => dispatchAnchor('product')}
+              >
+                Products
+              </label>
+            </li>
+            <li>
+              <label
+                htmlFor='optim-nav-checkbox'
+                onClick={() => dispatchAnchor('roadmap')}
+              >
+                Roadmap
+              </label>
+            </li>
+            <li>
+              <label
+                htmlFor='optim-nav-checkbox'
+                onClick={() => dispatchAnchor('team')}
+              >
+                Team
+              </label>
+            </li>
+            <li>
+              <span>
+                <span>Docs</span>
+                <span className='text-sm opacity-50 ml-2'>Coming soon!</span>
+              </span>
+            </li>
+            <li>
+              <span>
+                <span>Socials</span>
+              </span>
+            </li>
+            {SocialsComponent}
           </ul>
         </div>
       </nav>
@@ -122,56 +192,30 @@ const Navigator = ({ dispatchAnchor }: INavigatorProps) => {
 
 export default Navigator;
 
-const navItems = [
-  {
-    text: 'Products',
-    anchor: 'product',
-  },
-  {
-    text: 'Roadmap',
-    anchor: 'roadmap',
-  },
-  {
-    text: 'Team',
-    anchor: 'team',
-  },
-  {
-    text: 'Docs',
-    anchor: '',
-    upComing: true,
-  },
-  {
-    text: 'Socials',
-    anchor: '',
-  },
+const socials = [
   {
     text: 'Twitter',
-    anchor: '',
     icon: <TwitterFilled />,
     link: SOCIAL_LINKS.twitter,
   },
   {
     text: 'Discord',
-    anchor: '',
     icon: <DiscordFilled />,
-    link: '#',
+    link: '',
   },
   {
     text: 'Github',
-    anchor: '',
     icon: <GithubFilled />,
-    link: '#',
+    link: '',
   },
   {
     text: 'Medium',
-    anchor: '',
     icon: <MediumFilled />,
-    link: '#',
+    link: '',
   },
   {
     text: 'Reddit',
-    anchor: '',
     icon: <RedditFilled />,
-    link: '#',
+    link: '',
   },
 ];
