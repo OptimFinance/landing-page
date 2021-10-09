@@ -11,7 +11,7 @@ const Team = React.forwardRef<HTMLElement>((_, ref) => {
         <h2 className='text-[#d8d8d8] text-[40px] mb-8 md:text-[50px] md:mb-10'>
           Made by innovators
         </h2>
-        <Tag text='Comming soon' className='mb-5 md:mb-8' />
+        <Tag text='Coming soon' className='mb-5 md:mb-8' />
         <div className='mb-4 gradient-text text-2xl from-[#e3bef1] to-[#2a72eb] md:text-4xl md:mb-6'>
           A top-tier team with experience building on Cardano + DeFi on other
           chains
