@@ -77,7 +77,9 @@ const Navigator = ({ dispatchAnchor }: INavigatorProps) => {
                     </Menu.Button>
                   }
                 >
-                  <div className='gradient-text w-max'>Coming soon</div>
+                  <div className='hover:gradient-text w-max'>
+                    <a href='/whitepaper.pdf' target='_blank' rel='noopener noreferrer'>Whitepaper</a>
+                  </div>
                 </Dropdown>
               </li>
               <li>
@@ -85,7 +87,7 @@ const Navigator = ({ dispatchAnchor }: INavigatorProps) => {
                   trigger={
                     <Menu.Button className='inline-block'>
                       <span className='hover:gradient-text font-normal'>
-                        Socials
+                        Follow Us
                       </span>
                       <ChevronDownIcon
                         className='ml-1 h-5 w-5'
@@ -171,17 +173,11 @@ const Navigator = ({ dispatchAnchor }: INavigatorProps) => {
                 Team
               </label>
             </li>
+            <li>Docs</li>
             <li>
-              <span>
-                <span>Docs</span>
-                <span className='text-sm opacity-50 ml-2'>Coming soon!</span>
-              </span>
+              <a href='/whitepaper.pdf' target='_blank' rel='noopener noreferrer'>Whitepaper</a>
             </li>
-            <li>
-              <span>
-                <span>Socials</span>
-              </span>
-            </li>
+            <li>Follow Us</li>
             {SocialsComponent}
           </ul>
         </div>
@@ -204,9 +200,9 @@ const socials = [
     link: '',
   },
   {
-    text: 'Github',
+    text: 'GitHub',
     icon: <GithubFilled />,
-    link: '',
+    link: SOCIAL_LINKS.github,
   },
   {
     text: 'Medium',
