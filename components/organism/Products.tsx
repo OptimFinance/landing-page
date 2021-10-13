@@ -9,7 +9,7 @@ const Products = React.forwardRef<HTMLElement>((_, ref) => {
           Products
         </div>
         <h2 className='text-[#d8d8d8] text-[40px] mb-8 md:text-[50px]'>
-          Bringing Superpower to DEFI
+          Bringing Superpower to DeFi
         </h2>
         <div className='grid grid-cols-1 gap-5 md:grid-cols-2 lg:gap-10'>
           {products.map((product, index) => (
