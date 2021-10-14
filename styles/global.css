@@ -1,3 +1,83 @@
+@font-face {
+  font-family: 'Graphik';
+  src: url('../public/fonts/Graphik-Bold.woff2') format('woff2'),
+    url('../public/fonts/Graphik-Bold.woff') format('woff'),
+    url('../public/fonts/Graphik-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Graphik';
+  src: url('../public/fonts/Graphik-Regular.woff2') format('woff2'),
+    url('../public/fonts/Graphik-Regular.woff') format('woff'),
+    url('../public/fonts/Graphik-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Graphik';
+  src: url('../public/fonts/Graphik-Black.woff2') format('woff2'),
+    url('../public/fonts/Graphik-Black.woff') format('woff'),
+    url('../public/fonts/Graphik-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Graphik';
+  src: url('../public/fonts/Graphik-Medium.woff2') format('woff2'),
+    url('../public/fonts/Graphik-Medium.woff') format('woff'),
+    url('../public/fonts/Graphik-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Graphik';
+  src: url('../public/fonts/Graphik-Extralight.woff2') format('woff2'),
+    url('../public/fonts/Graphik-Extralight.woff') format('woff'),
+    url('../public/fonts/Graphik-Extralight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Graphik';
+  src: url('../public/fonts/Graphik-Light.woff2') format('woff2'),
+    url('../public/fonts/Graphik-Light.woff') format('woff'),
+    url('../public/fonts/Graphik-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Graphik';
+  src: url('../public/fonts/Graphik-Regular_1.woff2') format('woff2'),
+    url('../public/fonts/Graphik-Regular_1.woff') format('woff'),
+    url('../public/fonts/Graphik-Regular_1.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Graphik';
+  src: url('../public/fonts/Graphik-Regular_2.woff2') format('woff2'),
+    url('../public/fonts/Graphik-Regular_2.woff') format('woff'),
+    url('../public/fonts/Graphik-Regular_2.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

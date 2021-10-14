@@ -18,7 +18,7 @@ const Header = () => {
           <FollowUs />
         </div>
         {!isMobile && (
-          <div className='hidden md:block relative'>
+          <div className='hidden md:block relative z-[-2]'>
             <video
               src='/assets/optim_main.mp4'
               autoPlay
