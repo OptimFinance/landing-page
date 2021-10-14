@@ -44,7 +44,7 @@ export default function Home() {
       <Products ref={productRef} />
       <RoadMap ref={roadMapRef} />
       <Team ref={teamRef} />
-      <div className='px-5 mb-14'>
+      <div className='flex justify-center px-5 mb-14'>
         <FollowUs />
       </div>
       {/* <Subscription /> */}

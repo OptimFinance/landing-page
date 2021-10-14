@@ -18,7 +18,10 @@ interface INavigatorProps {
 
 const Navigator = ({ dispatchAnchor }: INavigatorProps) => {
   const SocialsComponent = socials.map((social) => (
-    <li key={social.text} className='hover:gradient-text'>
+    <li
+      key={social.text}
+      className='hover:text-white hover:opacity-60 flex items-center'
+    >
       {social.link ? (
         <a
           href={social.link}
@@ -26,12 +29,12 @@ const Navigator = ({ dispatchAnchor }: INavigatorProps) => {
           target='_blank'
           rel='noopener noreferrer'
         >
-          <span className='mr-2'>{social.icon}</span>
+          <span className='mr-2 mt-[-4px]'>{social.icon}</span>
           <span>{social.text}</span>
         </a>
       ) : (
         <>
-          <span className='mr-2'>{social.icon}</span>
+          <span className='mr-2 mt-[-4px]'>{social.icon}</span>
           <span>{social.text}</span>
         </>
       )}
@@ -52,19 +55,19 @@ const Navigator = ({ dispatchAnchor }: INavigatorProps) => {
           <div className='hidden md:block'>
             <ul className='text-sm flex space-x-3 lg:space-x-10'>
               <li
-                className='hover:gradient-text cursor-pointer'
+                className='hover:text-white hover:opacity-60 cursor-pointer'
                 onClick={() => dispatchAnchor('product')}
               >
                 Products
               </li>
               <li
-                className='hover:gradient-text cursor-pointer'
+                className='hover:text-white hover:opacity-60 cursor-pointer'
                 onClick={() => dispatchAnchor('roadmap')}
               >
                 Roadmap
               </li>
               <li
-                className='hover:gradient-text cursor-pointer'
+                className='hover:text-white hover:opacity-60 cursor-pointer'
                 onClick={() => dispatchAnchor('team')}
               >
                 Team
@@ -72,13 +75,19 @@ const Navigator = ({ dispatchAnchor }: INavigatorProps) => {
               <li>
                 <Dropdown
                   trigger={
-                    <Menu.Button className='inline-block hover:gradient-text font-normal'>
+                    <Menu.Button className='inline-block hover:text-white hover:opacity-60 font-normal'>
                       Docs
                     </Menu.Button>
                   }
                 >
-                  <div className='hover:gradient-text w-max'>
-                    <a href='/whitepaper.pdf' target='_blank' rel='noopener noreferrer'>Whitepaper</a>
+                  <div className='hover:text-white hover:opacity-60 w-max'>
+                    <a
+                      href='/whitepaper.pdf'
+                      target='_blank'
+                      rel='noopener noreferrer'
+                    >
+                      Whitepaper
+                    </a>
                   </div>
                 </Dropdown>
               </li>
@@ -86,7 +95,7 @@ const Navigator = ({ dispatchAnchor }: INavigatorProps) => {
                 <Dropdown
                   trigger={
                     <Menu.Button className='inline-block'>
-                      <span className='hover:gradient-text font-normal'>
+                      <span className='hover:text-white hover:opacity-60 font-normal'>
                         Follow Us
                       </span>
                       <ChevronDownIcon
@@ -102,7 +111,7 @@ const Navigator = ({ dispatchAnchor }: INavigatorProps) => {
             </ul>
           </div>
           <div className='hidden md:block'>
-            <div className='bg-optim-dark py-2 px-4 rounded-sm border border-white border-opacity-10 text-sm'>
+            <div className='bg-optim-dark py-2 px-4 flex items-center rounded-sm border border-white border-opacity-10 text-sm'>
               <span>
                 <BookOutlined />
               </span>
@@ -175,7 +184,13 @@ const Navigator = ({ dispatchAnchor }: INavigatorProps) => {
             </li>
             <li>Docs</li>
             <li>
-              <a href='/whitepaper.pdf' target='_blank' rel='noopener noreferrer'>Whitepaper</a>
+              <a
+                href='/whitepaper.pdf'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                Whitepaper
+              </a>
             </li>
             <li>Follow Us</li>
             {SocialsComponent}

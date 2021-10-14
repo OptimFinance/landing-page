@@ -23,11 +23,11 @@ const HTMLHead = ({ title = 'Optim Finance' }: HeaderProps) => {
         <meta name='copyright' content='Copyright 2021 Optim' />
         <meta name='image' content='/assets/optim_og_image.png' />
         <meta property='og:image' content='/assets/optim_og_image.png' />
-        <link
+        {/* <link
           href='https://fonts.cdnfonts.com/css/graphik'
           rel='preload stylesheet'
           as='font'
-        ></link>
+        ></link> */}
         <link
           href='https://fonts.googleapis.com/css2?family=DM+Mono:wght@200;300;400;500&display=swap'
           rel='preload stylesheet'
