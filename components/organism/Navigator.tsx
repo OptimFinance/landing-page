@@ -212,7 +212,7 @@ const socials = [
   {
     text: 'Discord',
     icon: <DiscordFilled />,
-    link: '',
+    link: SOCIAL_LINKS.discord,
   },
   {
     text: 'GitHub',
