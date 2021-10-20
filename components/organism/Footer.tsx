@@ -22,10 +22,18 @@ const Footer = React.forwardRef<HTMLElement>((_, ref) => {
               >
                 <TwitterFilled />
               </a>
-              <a href='#'>
+              <a
+                href={SOCIAL_LINKS.discord}
+                target='_blank'
+                rel='noopener noreferrer'
+              >
                 <DiscordFilled />
               </a>
-              <a href='#'>
+              <a
+                href={SOCIAL_LINKS.github}
+                target='_blank'
+                rel='noopener noreferrer'
+              >
                 <GithubFilled />
               </a>
               <a href='#'>
