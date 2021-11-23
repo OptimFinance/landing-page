@@ -18,7 +18,7 @@ const Team = React.forwardRef<HTMLElement>((_, ref) => {
         </div>
         <div className='mb-8 text-sm text-[#d8d8d8] tracking-[5px] font-light uppercase md:text-lg md:mb-14'>
           Alumni from: MLabs | IOHK | <br />
-          Celo | Algorand | MIT | Harvard | Cambridge
+          Celo | MIT | Harvard | Cambridge
         </div>
         <div className='flex flex-wrap'>
           <div className='w-1/3 mb-6 h-[24px] md:h-[50px] md:mb-8 lg:w-1/4'>
@@ -40,13 +40,6 @@ const Team = React.forwardRef<HTMLElement>((_, ref) => {
               className='h-full w-min ml-auto lg:mx-auto'
               src='/assets/celo-logo.svg'
               alt='celo'
-            />
-          </div>
-          <div className='w-1/3 mb-6 h-[24px] md:h-[50px] md:mb-8 lg:w-1/4 '>
-            <img
-              className='h-full w-min lg:ml-auto'
-              src='/assets/algorand-logo.svg'
-              alt='algorand'
             />
           </div>
           <div className='w-1/3 mb-6 h-[24px] md:h-[50px] md:mb-8 lg:w-1/4 text-center'>
