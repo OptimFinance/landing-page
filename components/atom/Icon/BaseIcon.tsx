@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+import { ReactNode } from "react";
 
 export interface IIconProps {
   path?: ReactNode;
@@ -8,10 +8,10 @@ export interface IIconProps {
 const BaseIcon = ({ path, size = 24 }: IIconProps) => {
   return (
     <svg
-      className='inline'
+      className="inline"
       width={size}
       height={size}
-      xmlns='http://www.w3.org/2000/svg'
+      xmlns="http://www.w3.org/2000/svg"
     >
       {path}
     </svg>

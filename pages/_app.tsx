@@ -1,10 +1,10 @@
-import { AppProps } from 'next/app';
-import Header from '@/components/organism/HTMLHead';
-import '../styles/global.css';
+import { AppProps } from "next/app";
+import Header from "@/components/organism/HTMLHead";
+import "../styles/global.css";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <div className='text-white font-sans w-full overflow-hidden'>
+    <div className="text-white font-sans w-full overflow-hidden">
       <Header />
       <Component {...pageProps} />
     </div>

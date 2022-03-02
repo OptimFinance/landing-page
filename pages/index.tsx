@@ -1,12 +1,12 @@
-import { useRef } from 'react';
-import Navigator from '@/components/organism/Navigator';
-import Header from '@/components/organism/Header';
-import Products from '@/components/organism/Products';
-import RoadMap from '@/components/organism/RoadMap';
-import Team from '@/components/organism/Team';
+import { useRef } from "react";
+import Navigator from "@/components/organism/Navigator";
+import Header from "@/components/organism/Header";
+import Products from "@/components/organism/Products";
+import RoadMap from "@/components/organism/RoadMap";
+import Team from "@/components/organism/Team";
 // import Subscription from '@/components/organism/Subscription';
-import Footer from '@/components/organism/Footer';
-import FollowUs from '@/components/organism/FollowUs';
+import Footer from "@/components/organism/Footer";
+import FollowUs from "@/components/organism/FollowUs";
 
 export default function Home() {
   const productRef = useRef<HTMLElement>(null);
@@ -17,34 +17,34 @@ export default function Home() {
   const dispatchAnchor = (anchor: string) => {
     let ref;
     switch (anchor) {
-      case 'product':
+      case "product":
         ref = productRef.current;
         break;
-      case 'roadmap':
+      case "roadmap":
         ref = roadMapRef.current;
         break;
-      case 'team':
+      case "team":
         ref = teamRef.current;
         break;
-      case 'footer':
+      case "footer":
         ref = footerRef.current;
         break;
       default:
         break;
     }
     ref?.scrollIntoView?.({
-      behavior: 'smooth',
+      behavior: "smooth",
     });
   };
 
   return (
-    <div className='text-select'>
+    <div className="text-select">
       <Navigator dispatchAnchor={dispatchAnchor} />
       <Header />
       <Products ref={productRef} />
       <RoadMap ref={roadMapRef} />
       <Team ref={teamRef} />
-      <div className='flex justify-center px-5 mb-14'>
+      <div className="flex justify-center px-5 mb-14">
         <FollowUs />
       </div>
       {/* <Subscription /> */}
