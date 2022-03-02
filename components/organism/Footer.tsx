@@ -1,9 +1,9 @@
 import React from "react";
 import {
   DiscordFilled,
+  GitbookFilled,
   GithubFilled,
   MediumFilled,
-  RedditFilled,
   TwitterFilled,
 } from "../atom/Icon";
 import SOCIAL_LINKS from "config/social";
@@ -36,11 +36,19 @@ const Footer = React.forwardRef<HTMLElement>((_, ref) => {
               >
                 <GithubFilled />
               </a>
-              <a href="#">
+              <a
+                href={SOCIAL_LINKS.medium}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <MediumFilled />
               </a>
-              <a href="#">
-                <RedditFilled />
+              <a
+                href={SOCIAL_LINKS.gitbook}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <GitbookFilled />
               </a>
             </div>
             <div className="w-6">

@@ -6,3 +6,4 @@ export { default as DiscordFilled } from "./DiscordFilled";
 export { default as ChevronRight } from "./ChevronRight";
 export { default as CloseOutlined } from "./CloseOutlined";
 export { default as BookOutlined } from "./BookOutlined";
+export { default as GitbookFilled } from "./GitbookFilled";

@@ -5,9 +5,9 @@ import {
   BookOutlined,
   CloseOutlined,
   DiscordFilled,
+  GitbookFilled,
   GithubFilled,
   MediumFilled,
-  RedditFilled,
   TwitterFilled,
 } from "../atom/Icon";
 import { ChevronDownIcon } from "@heroicons/react/solid";
@@ -225,8 +225,8 @@ const socials = [
     link: SOCIAL_LINKS.medium,
   },
   {
-    text: "Reddit",
-    icon: <RedditFilled />,
-    link: "",
+    text: "GitBook",
+    icon: <GitbookFilled />,
+    link: SOCIAL_LINKS.gitbook,
   },
 ];
