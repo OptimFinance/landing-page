@@ -222,7 +222,7 @@ const socials = [
   {
     text: "Medium",
     icon: <MediumFilled />,
-    link: "",
+    link: SOCIAL_LINKS.medium,
   },
   {
     text: "Reddit",
